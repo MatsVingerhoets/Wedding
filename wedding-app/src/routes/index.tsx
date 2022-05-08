@@ -1,14 +1,14 @@
-import { RouteObject } from "./router";
+import { RouteObject } from "./router"
 // import Layout from "app/components/Layout";
-import Home from "./Home";
+import Home from "./Home"
 
 const routes: RouteObject[] = [
   {
     component: Home,
     // layout: Layout,
     hasAuthentication: true,
-    path: "/",
-  },
-];
+    path: "/"
+  }
+]
 
-export default routes;
+export default routes

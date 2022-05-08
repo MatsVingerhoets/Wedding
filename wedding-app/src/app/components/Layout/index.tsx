@@ -1,8 +1,8 @@
-import AppBar from "./AppBar";
+import AppBar from "../AppBar"
 
 type Props = {
-  children: JSX.Element;
-};
+  children: JSX.Element
+}
 
 const Layout = ({ children }: Props): JSX.Element => {
   return (
@@ -10,6 +10,6 @@ const Layout = ({ children }: Props): JSX.Element => {
       <AppBar />
       {children}
     </main>
-  );
-};
-export default Layout;
+  )
+}
+export default Layout
