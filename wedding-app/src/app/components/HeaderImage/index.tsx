@@ -1,6 +1,6 @@
-import { Grid } from "@mui/material"
+import { Skeleton } from "@mui/material"
 
 const HeaderImage = (): JSX.Element => {
-  return <Grid>test</Grid>
+  return <Skeleton variant="rectangular" height={180} />
 }
 export default HeaderImage

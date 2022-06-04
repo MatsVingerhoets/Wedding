@@ -2,11 +2,7 @@ import { Container } from "@mui/material"
 import MainImage from "app/components/MainImage"
 
 const Home = () => {
-  return (
-    <Container>
-      <MainImage />
-    </Container>
-  )
+  return <Container>PHOTOS </Container>
 }
 
 export default Home

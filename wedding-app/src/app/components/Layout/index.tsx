@@ -1,4 +1,6 @@
+import { memo } from "react"
 import AppBar from "../AppBar"
+import HeaderImage from "../HeaderImage"
 
 type Props = {
   children: JSX.Element
@@ -7,9 +9,10 @@ type Props = {
 const Layout = ({ children }: Props): JSX.Element => {
   return (
     <main>
+      <HeaderImage />
       <AppBar />
       {children}
     </main>
   )
 }
-export default Layout
+export default memo(Layout)
