@@ -1,8 +1,12 @@
 import { Container } from "@mui/material"
-import MainImage from "app/components/MainImage"
+import PhotoList from "app/components/PhotoList"
 
 const Home = () => {
-  return <Container>PHOTOS </Container>
+  return (
+    <Container>
+      <PhotoList />
+    </Container>
+  )
 }
 
 export default Home
