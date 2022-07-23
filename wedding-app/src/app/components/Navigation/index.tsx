@@ -2,12 +2,12 @@ import { Grid } from "@mui/material"
 import { useLocation } from "react-router-dom"
 import Link from "../Link"
 import config from "./config"
+import { StyledGrid } from "./style"
 
 const Navigation = (): JSX.Element => {
   const { pathname } = useLocation()
-  console.log(pathname === config[0].to)
   return (
-    <Grid container justifyContent="center" spacing={3}>
+    <StyledGrid container justifyContent="center" spacing={3}>
       {config.map(({ name, to }) => (
         <Grid item key={name + to}>
           <Link
@@ -18,7 +18,7 @@ const Navigation = (): JSX.Element => {
           />
         </Grid>
       ))}
-    </Grid>
+    </StyledGrid>
   )
 }
 export default Navigation

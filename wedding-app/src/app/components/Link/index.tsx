@@ -7,8 +7,8 @@ type Props = {
   variant: TypographyProps["variant"]
   underline: "none" | "hover" | "always"
 }
+
 const Link = ({ name, to, variant, underline }: Props): JSX.Element => {
-  console.log(underline)
   return (
     <MuiLink
       component={RouterLink}

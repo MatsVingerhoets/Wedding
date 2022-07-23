@@ -1,0 +1,50 @@
+    <Grid container direction="column" justifyContent="center">
+      <Grid item>
+        <Typography variant="h4">Request your favourite songs!</Typography>
+      </Grid>
+      <Grid item container>
+        <form onSubmit={formik.handleSubmit}>
+          <Grid container spacing={2} direction="column">
+            <Grid item>
+              <TextField
+                size="small"
+                fullWidth
+                id="songName"
+                name="songName"
+                label="Song name"
+                value={formik.values.songName}
+                onChange={formik.handleChange}
+                error={
+                  formik.touched.songName && Boolean(formik.errors.songName)
+                }
+                helperText={formik.touched.songName && formik.errors.songName}
+              />
+            </Grid>
+            <Grid item>
+              <TextField
+                size="small"
+                fullWidth
+                id="artist"
+                name="artist"
+                label="Artist"
+                value={formik.values.artist}
+                onChange={formik.handleChange}
+                error={formik.touched.artist && Boolean(formik.errors.artist)}
+                helperText={formik.touched.artist && formik.errors.artist}
+              />
+            </Grid>
+            <Grid
+              item
+              container
+              alignItems="flex-end"
+              justifyContent="flex-end"
+            >
+              <Button color="primary" variant="contained" type="submit">
+                Submit
+              </Button>
+            </Grid>
+          </Grid>
+        </form>
+        <Grid item />
+      </Grid>
+    </Grid>

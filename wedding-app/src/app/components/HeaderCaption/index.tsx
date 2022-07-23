@@ -1,10 +1,11 @@
-import { Grid, Typography } from "@mui/material"
+import { Typography } from "@mui/material"
+import { StyledGrid } from "./style"
 
 const HeaderCaption = (): JSX.Element => {
   return (
-    <Grid container justifyContent="center">
-      <Typography variant="body1">27.Mei.2023 - Berchem</Typography>
-    </Grid>
+    <StyledGrid container justifyContent="center">
+      <Typography variant="body2">27.Mei.2023 - Berchem</Typography>
+    </StyledGrid>
   )
 }
 export default HeaderCaption
